@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:beige;
+            color: #333;
+        }
+        header {
+            background-color:skyblue;
+            color: white;
+            text-align: center;
+            padding: 1rem 2rem;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color:white;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            padding: 0.8rem;
+            background-color:dodgerblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: palegreen;
+        }
+        .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color:fuchsia;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>SPICE MYSTERY
+            GET IN TOUCH</h1>
+        <h2>𝑊𝑒’𝑑 𝑙𝑜𝑣𝑒 𝑡𝑜 ℎ𝑒𝑎𝑟 𝑓𝑟𝑜𝑚 𝑦𝑜𝑢</h2>
+    </header>
+    <div class="container">
+        <form action="/submit-contact" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Address:</strong>Nungambakkam,Chennai</p>
+            <p><strong>Phone:</strong>9512357456</p>
+            <p><strong>Email:</strong> info@spicemystery.com</p>
+            <p><strong>Office Hours:</strong> Monday to Sunday, 9:00 AM - 10:00 PM</p>
+        </div>
+    </div>
+    <a href="Restaurant menu.html" >BACK</a>
+    </center>
+</body>
+</html>
